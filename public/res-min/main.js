@@ -10191,7 +10191,7 @@ define("constants", [], function() {
 	e.COUCHDB_URL = "https://stackedit.smileupps.com/documents",
 	e.BASE_URL = "http2://stackedit.hewenhan.me/",
 	e.GOOGLE_CLIENT_ID = "241271498917-lev37kef013q85avc91am1gccg5g8lrb.apps.googleusercontent.com",
-	e.GITHUB_CLIENT_ID = "e47fef6055344579799d",
+	e.GITHUB_CLIENT_ID = "0fccd743686aecbd",
 	e.GATEKEEPER_URL = "https://stackedit-gatekeeper-localhost.herokuapp.com/",
 	e.TUMBLR_PROXY_URL = "https://stackedit-tumblr-proxy-local.herokuapp.com/",
 	e.WORDPRESS_CLIENT_ID = "23361",
