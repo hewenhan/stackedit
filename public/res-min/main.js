@@ -10161,7 +10161,7 @@ define("utils", ["jquery", "underscore", "storage", "crel", "xregexp", "stacktra
 define("constants", [], function() {
 	var e = {};
 	return e.VERSION = "4.3.22",
-	e.MAIN_URL = "https://stackedit.io/",
+	e.MAIN_URL = "https://stackedit.hewenhan.me/",
 	e.GOOGLE_ANALYTICS_ACCOUNT_ID = "UA-39556145-1",
 	e.GOOGLE_API_KEY = "AIzaSyAeCU8CGcSkn0z9js6iocHuPBX4f_mMWkw",
 	e.GOOGLE_DRIVE_APP_ID = "241271498917",

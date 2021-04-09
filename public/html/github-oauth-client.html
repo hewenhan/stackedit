@@ -15,7 +15,7 @@
 	var code = getParameter("code");
 	if (client_id) {
 		window.location.href = "https://github.com/login/oauth/authorize?client_id="
-			+ client_id + "&scope=" + scope;
+			+ client_id + "&scope=" + scope + "&redirect_uri=https://stackedit.hewenhan.me/html/github-oauth-client.html";
 	} else {
 		if (code) {
 			localStorage["githubCode"] = code;
