@@ -1,9 +1,9 @@
 define([], function() {
 	var constants = {};
 	constants.VERSION = "4.3.22";
-	constants.MAIN_URL = "https://stackedit.io/";
+	constants.MAIN_URL = "https://stackedit.hewenhan.me/";
 	constants.GOOGLE_ANALYTICS_ACCOUNT_ID = "UA-39556145-1";
-	constants.GOOGLE_API_KEY = "AIzaSyAeCU8CGcSkn0z9js6iocHuPBX4f_mMWkw";
+	constants.GOOGLE_API_KEY = "AIzaSyDhQEjploRhhJbn9XW7_oG5FYfvvaf2LO4";
 	constants.GOOGLE_DRIVE_APP_ID = "241271498917";
 	constants.DROPBOX_APP_KEY = "lq6mwopab8wskas";
 	constants.DROPBOX_APP_SECRET = "851fgnucpezy84t";

@@ -12,6 +12,7 @@
   "dependencies": {
     "bower": "~1.8.2",
     "compression": "~1.0.11",
+    "diff-match-patch-js-browser-and-nodejs": "^1.0.2",
     "ejs": "~0.8.4",
     "express": "~4.8.5",
     "request": "~2.40.0",
@@ -19,21 +20,21 @@
     "ssh2": "~0.3.5"
   },
   "devDependencies": {
-    "gulp": "~3.9.1",
-    "gulp-requirejs": "~1.0.0",
-    "gulp-jshint": "~1.8.4",
-    "gulp-uglify": "~1.1.0",
-    "gulp-less": "~1.3.5",
     "bower-requirejs": "~1.1.0",
-    "gulp-inject": "git://github.com/benweet/gulp-inject.git#8bd702d143a578e3b44290d82612ab808ee17281",
-    "run-sequence": "~0.3.6",
-    "gulp-clean": "~0.3.1",
-    "gulp-replace": "~0.4.0",
+    "event-stream": "~3.1.7",
+    "gulp": "~3.9.1",
     "gulp-bump": "~0.1.11",
-    "gulp-util": "~3.0.1",
+    "gulp-clean": "~0.3.1",
+    "gulp-inject": "git://github.com/benweet/gulp-inject.git#8bd702d143a578e3b44290d82612ab808ee17281",
+    "gulp-jshint": "~1.8.4",
+    "gulp-less": "~1.3.5",
+    "gulp-replace": "~0.4.0",
+    "gulp-requirejs": "~1.0.0",
+    "gulp-uglify": "~1.1.0",
+    "gulp-util": "^3.0.8",
     "knox": "~0.9.1",
     "mime": "~1.2.11",
-    "event-stream": "~3.1.7"
+    "run-sequence": "~0.3.6"
   },
   "scripts": {
     "postinstall": "bower --allow-root install",
