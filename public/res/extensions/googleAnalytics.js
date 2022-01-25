@@ -16,7 +16,6 @@ define([
     window._gaq = [];
 
     var init = function() {
-        console.log('mamaya');
         if(isLoaded === false && isOffline === false) {
             var gaUrl = "/ga.js";
             if(location.search.match(/(\?|&)console/)) {

@@ -321,21 +321,29 @@ define([
 		$(".action-download-md").click(function() {
 			var content = fileMgr.currentFile.content;
 			var title = fileMgr.currentFile.title;
-			utils.saveAs(content, title + ".md");
+			utils.saveAs(content, title + ".md", 'text/markdown');
 		});
 		$(".action-download-html").click(function() {
 			var title = fileMgr.currentFile.title;
-			utils.saveAs(currentHTML.withoutComments, title + ".html");
+			utils.saveAs(currentHTML.withoutComments, title + ".html", 'text/html');
 		});
 		$(".action-download-template").click(function() {
 			var fileDesc = fileMgr.currentFile;
 			var content = publisher.applyTemplate(fileDesc, undefined, currentHTML);
-			utils.saveAs(content, fileDesc.title + (settings.template.indexOf("documentHTML") === -1 ? ".md" : ".html"));
+			if (settings.template.indexOf("documentHTML") === -1) {
+				utils.saveAs(content, fileDesc.title + '.md', 'text/markdown');
+				return;
+			}
+			utils.saveAs(content, fileDesc.title + '.html', 'text/html');
 		});
 		var monetize = new MonetizeJS({
 			applicationID: 'ESTHdCYOi18iLhhO'
 		});
 		$(".action-download-pdf").click(function() {
+			utils.redirectConfirm('You Are Downloading A PDF', function() {
+				console.log('asd');
+			});
+			return;
 			var fileDesc = fileMgr.currentFile;
 			var content = publisher.applyTemplate(fileDesc, {
 				customTmpl: settings.pdfTemplate

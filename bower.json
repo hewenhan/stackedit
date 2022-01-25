@@ -10,6 +10,7 @@
     "require-css": "0.1.5",
     "require-less": "0.1.2",
     "mousetrap": "~1.4.4",
+    "FileSaver": "*",
     "jgrowl": "~1.2.10",
     "google-code-prettify": "~1.0.0",
     "stacktrace": "~0.6.2",
@@ -32,8 +33,7 @@
     "flowchart": "https://github.com/adrai/flowchart.js.git#751717d3db6437def9a5f8b1cb73e8bb81b5833a",
     "monetizejs": "~0.2.0",
     "MathJax": "2.6.1",
-    "alertify.js": "https://github.com/fabien-d/alertify.js.git#fc2e06fa39873363dda199204b8544119ab060bf",
-    "file-saver": "FileSaver#^2.0.4"
+    "alertify.js": "https://github.com/fabien-d/alertify.js.git#fc2e06fa39873363dda199204b8544119ab060bf"
   },
   "main": [
     "/public/res/main.js",

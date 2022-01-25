@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#Date Tue Jan 04 2022 20:22:12 GMT+0800 (CST)
+#Date Tue Jan 25 2022 16:37:16 GMT+0800 (CST)
 
 CACHE:
 .
@@ -218,11 +218,11 @@ res/bower-libs/MathJax/jax/output/SVG/fonts/TeX/Script/Regular/Main.js?rev=2.6.1
 res/bower-libs/MathJax/jax/output/SVG/fonts/TeX/Size1/Regular/Main.js?rev=2.6.1
 res/bower-libs/MathJax/jax/output/SVG/fonts/TeX/Size2/Regular/Main.js?rev=2.6.1
 res/bower-libs/MathJax/jax/output/SVG/fonts/TeX/Size3/Regular/Main.js?rev=2.6.1
-res/bower-libs/MathJax/jax/output/SVG/fonts/TeX/Size4/Regular/Main.js?rev=2.6.1
 res/bower-libs/MathJax/jax/output/SVG/fonts/TeX/Typewriter/Regular/BasicLatin.js?rev=2.6.1
 res/bower-libs/MathJax/jax/output/SVG/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js?rev=2.6.1
 res/bower-libs/MathJax/jax/output/SVG/fonts/TeX/Typewriter/Regular/Main.js?rev=2.6.1
 res/bower-libs/MathJax/jax/output/SVG/fonts/TeX/Typewriter/Regular/Other.js?rev=2.6.1
+res/bower-libs/MathJax/jax/output/SVG/fonts/TeX/Size4/Regular/Main.js?rev=2.6.1
 # end_inject_mathjax
 
 

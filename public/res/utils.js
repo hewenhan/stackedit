@@ -451,33 +451,29 @@ define([
 	};
 
 	// Export data on disk
-	utils.saveAs = function(content, filename) {
-		if(saveAs !== undefined && !/constructor/i.test(window.HTMLElement) /* safari does not support saveAs */) {
-			if(_.isString(content)) {
-				content = new Blob([
-					content
-				], {
-					type: "text/plain;charset=utf-8"
-				});
+	utils.saveAs = function(content, filename, filetype) {
+		filetype = filetype || 'text/plain';
+		if (_.isString(content)) {
+			var element = document.createElement('a');
+			element.setAttribute('href', 'data:' + filetype + ';charset=utf-8,' + encodeURIComponent(content));
+			element.setAttribute('download', filename);
+			element.setAttribute('target', '_blank');
+			element.style.display = 'none';
+			document.body.appendChild(element);
+			if (/safari/ig.test(navigator.userAgent)) {
+				setTimeout(() => {
+					element.click();
+					document.body.removeChild(element);
+				}, 500);
+				return;
 			}
-			saveAs(content, filename);
+			element.click();
+			document.body.removeChild(element);
+			return;
 		}
-		else {
-			if(_.isString(content)) {
-				var uriContent = "data:application/octet-stream;base64," + utils.encodeBase64(content);
-				window.open(uriContent, 'file');
-			}
-			else {
-				var reader = new FileReader();
-				reader.onload = function(event) {
-					utils.redirectConfirm('You are opening a PDF document.', function() {
-						var uriContent = 'data:application/pdf;' + event.target.result.substring(event.target.result.indexOf('base64'));
-						window.open(uriContent, 'file');
-					});
-				};
-				reader.readAsDataURL(content); // Convert the blob to base64
-			}
-		}
+		utils.redirectConfirm('You Are Saving Not A Text File', function() {
+			console.log('asd');
+		});
 	};
 
 	// Time shared by others modules
